@@ -54,7 +54,7 @@ export class PokemonService {
   async update(term: string, updatePokemonDto: UpdatePokemonDto) {
     let pokemon = await this.findOne(term);
     if (updatePokemonDto.name) {
-      updatePokemonDto.name = updatePokemonDto.name;
+      updatePokemonDto.name = updatePokemonDto.name.toLowerCase();
     }
 
     try {
@@ -89,4 +89,5 @@ export class PokemonService {
     console.log(error);
     throw new InternalServerErrorException(`Something went wrong...`);
   }
+
 }
