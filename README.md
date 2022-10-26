@@ -17,6 +17,10 @@ npm install -g @nestjs/cli
 ```
 docker-compose up -d
 ```
+5. Rebuild database with seed
+```
+Request GET to http://localhost:3000/api/v2/seed
+```
 
 
 ## Stack
