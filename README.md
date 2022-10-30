@@ -36,3 +36,7 @@ Request GET to http://localhost:3000/api/v2/seed
 
 # Notas
 Redeploy Heroku
+```
+git commit --allow-empty -m "Trigger Heroku Deploy"
+git push heroku main
+```
