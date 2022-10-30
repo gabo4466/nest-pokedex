@@ -33,3 +33,6 @@ Request GET to http://localhost:3000/api/v2/seed
 * MongoDB
 * Nest
 * Mongoose
+
+# Notas
+Redeploy Heroku
