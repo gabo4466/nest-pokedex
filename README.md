@@ -28,6 +28,13 @@ npm run start:dev
 Request GET to http://localhost:3000/api/v2/seed
 ```
 
+# Prod Build
+1. Create file __.env.prod__
+2. Declare prod env variables
+3. Create docker image
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
 
 ## Stack
 * MongoDB
